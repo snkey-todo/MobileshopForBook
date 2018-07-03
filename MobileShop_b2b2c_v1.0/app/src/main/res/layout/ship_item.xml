@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="98.0dip"
+    android:background="@color/white"
+    android:paddingBottom="14.0dip"
+    android:paddingTop="14.0dip" >
+
+    <TextView
+        android:id="@+id/ship_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/goodslist_img"
+        android:layout_marginLeft="16.0dip"
+        android:layout_toRightOf="@id/goodslist_img"
+        android:text="shusssss"
+        android:textColor="@color/dark"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/ship_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ship_name"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:text="55555"
+        android:textColor="@color/red"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

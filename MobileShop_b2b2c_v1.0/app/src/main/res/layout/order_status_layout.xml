@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/order_list_entity_item_divider_line_0"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe1e1e1" />
+
+    <ImageView
+        android:id="@+id/order_detail_finish_singet_iv"
+        android:layout_width="69.0dip"
+        android:layout_height="69.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17.0dip"
+        android:layout_marginTop="17.0dip"
+        android:src="@drawable/orderlist_finish_signet"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/order_list_entity_item_order_status_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <TextView
+            android:id="@+id/detail_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14.0dip"
+            android:textColor="#fffe5f5f"
+            android:textSize="17.0sp"/>
+
+        <RelativeLayout
+            android:id="@+id/order_list_entity_item_orderNumber_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/detail_order_id_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1.0dip"
+                android:text="@string/order_bumber"
+                android:textColor="#ff686868"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/detail_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/detail_order_id_number"
+                android:textColor="#ff686868"
+                android:textIsSelectable="true"
+                android:textSize="14.0sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="12.0dip" />
+
+</RelativeLayout>

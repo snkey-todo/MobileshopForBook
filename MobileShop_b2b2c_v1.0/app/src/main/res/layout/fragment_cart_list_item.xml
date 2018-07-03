@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_title_background"
+    android:paddingBottom="15.0dip"
+    android:paddingTop="15.0dip">
+
+    <RelativeLayout
+        android:id="@+id/cart_single_product_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cart_single_product_detail_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/cart_single_product_detail_icon"
+        android:paddingLeft="12.0dip"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cart_cb"
+            android:layout_width="21.0dip"
+            android:layout_height="21.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_l"
+            android:button="@null"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cart_single_product_detail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5.0dip"
+        android:layout_toRightOf="@id/cart_single_product_select"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="12.0dip">
+
+        <ImageView
+            android:id="@+id/cart_image"
+            android:layout_width="95.0dip"
+            android:layout_height="95.0dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shopping_cart_product_icon_bg"
+            android:scaleType="fitCenter" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/cart_single_product_image_icon"-->
+        <!--android:layout_width="20.0dip"-->
+        <!--android:layout_height="20.0dip"-->
+        <!--android:layout_alignLeft="@id/cart_single_product_image"-->
+        <!--android:layout_alignTop="@id/cart_single_product_image"-->
+        <!--android:background="@drawable/shopping_cart_change_icon"-->
+        <!--android:paddingBottom="2.0dip"-->
+        <!--android:paddingLeft="2.0dip"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="11.5sp"-->
+        <!--android:text="促"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/cart_single_product_stock_tip"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@id/cart_single_product_image"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="5.0dip"-->
+        <!--android:background="@drawable/cart_no_stock_bg_shape"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="4.0dip"-->
+        <!--android:paddingRight="4.0dip"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="13.0sp"-->
+        <!--android:text="惠"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cart_single_product_detail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cart_single_product_detail_icon"
+        android:layout_alignTop="@id/cart_single_product_detail_icon"
+        android:layout_gravity="left"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_toRightOf="@id/cart_single_product_detail_icon"
+        android:minHeight="45.0dip">
+
+        <TextView
+            android:id="@+id/cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10.0dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/shopping_cart_product_name"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/cart_single_product_name_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10.0dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/shopping_cart_product_name"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cart_name"
+            android:layout_below="@id/cart_name"
+            android:layout_marginRight="10.0dip"
+            android:text="￥199.00"
+            android:textColor="@color/shopping_cart_product_name"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/cart_single_product_num_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@id/cart_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2.0dip"
+            android:layout_marginTop="60dip"
+            android:paddingLeft="2.0dip">
+
+            <ImageButton
+                android:id="@+id/cart_single_product_num_reduce"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shopping_cart_edit_reduce_selector" />
+
+            <TextView
+                android:id="@+id/cart_single_product_et_num"
+                android:layout_width="44.0dip"
+                android:layout_height="28.0dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cart_single_product_num_reduce"
+                android:background="@drawable/shopping_cart_edit_view_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:maxLength="4"
+                android:minWidth="28.0dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="@color/cart_product_name"
+                android:textSize="16.0sp" />
+
+            <ImageButton
+                android:id="@+id/cart_single_product_num_add"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cart_single_product_et_num"
+                android:background="@drawable/shopping_cart_edit_add_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shopping_cart_subtotal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cart_single_product_detail_layout"
+        android:gravity="center_vertical"
+        android:paddingLeft="46.0dip">
+
+        <View
+            android:id="@+id/view_shopping_cart_top_pack_gap"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentTop="true"
+            android:background="@color/cart_item_background_gap_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_shopping_cart_top_pack_gap"
+            android:layout_marginTop="12.0dip"
+            android:paddingRight="5.0dip">
+
+            <TextView
+                android:id="@+id/cart_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/shopping_cart_subtotal_text"
+                android:textSize="16.0sp" android:text="小计：￥1988"/>
+
+            <TextView
+                android:id="@+id/cart_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_toRightOf="@id/cart_subtotal"
+                android:textColor="@color/shopping_cart_return_cash"
+                android:textSize="14.0sp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/cart_product_other_get_handsel_but1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10.0dip"-->
+                <!--android:background="@drawable/cart_yb_gift_btn_selector"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingBottom="4.0dip"-->
+                <!--android:paddingLeft="11.0dip"-->
+                <!--android:paddingRight="11.0dip"-->
+                <!--android:paddingTop="4.0dip"-->
+                <!--android:text="领取赠品"-->
+                <!--android:textColor="@color/shopping_cart_change_product"-->
+                <!--android:textSize="15.0sp"-->
+                <!--android:visibility="gone" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

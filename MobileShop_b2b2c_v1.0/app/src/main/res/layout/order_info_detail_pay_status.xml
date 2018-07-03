@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <View style="@style/order_detail_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_detail_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="51.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/pd_item_enable_bg"
+            android:gravity="center|left"
+            android:paddingLeft="14.0dip"
+            android:text="@string/pg_post_paytype_selectpayment_dialog"
+            android:textColor="@color/fill_order_delivery_light"
+            android:textSize="17.0dip" />
+
+        <ImageView
+            android:id="@+id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/android_list_idex"
+            android:clickable="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/order_detail_payment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="51.0dip"
+            android:layout_toLeftOf="@id/arrow_right"
+            android:gravity="center|right"
+            android:paddingLeft="14.0dip"
+            android:textColor="@color/fill_order_delivery_dark"
+            android:textSize="17.0dip" />
+    </RelativeLayout>
+
+    <View
+        style="@style/order_detail_line"
+        android:layout_marginLeft="10.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/order_detail_delivery_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="60.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_detail_delivery_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/pd_item_enable_bg"
+            android:gravity="center|left"
+            android:paddingLeft="14.0dip"
+            android:paddingTop="10.0dip"
+            android:text="@string/content_persong_type"
+            android:textColor="@color/fill_order_delivery_light"
+            android:textSize="17.0dip" />
+
+        <ImageView
+            android:id="@+id/arrow_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/android_list_idex"
+            android:clickable="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/order_detail_delivery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_toLeftOf="@id/arrow_right1"
+            android:layout_toRightOf="@id/order_detail_delivery_title"
+            android:gravity="center|right"
+            android:paddingLeft="14.0dip"
+            android:textColor="@color/fill_order_delivery_dark"
+            android:textSize="17.0dip" />
+
+        <ImageView
+            android:id="@+id/ivDeliverHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_detail_delivery_tv"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toLeftOf="@id/arrow_right1"
+            android:background="@drawable/original_dilivery_bg"
+            android:clickable="true"
+            android:padding="2.0dip"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/order_detail_ship_number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_detail_delivery_title"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toLeftOf="@id/ivDeliverHead"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_detail_ship_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="14.0dip"
+                android:textColor="@color/fill_order_delivery_light"
+                android:textSize="14.0dip"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/order_detail_line"
+        android:layout_marginLeft="10.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_detail_receipt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/pd_item_enable_bg"
+            android:gravity="center|left"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="14.0dip"
+            android:paddingTop="15.0dip"
+            android:text="@string/receipt_info"
+            android:textColor="@color/fill_order_delivery_light"
+            android:textSize="17.0dip" />
+
+        <ImageView
+            android:id="@+id/arrow_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/android_list_idex"
+            android:clickable="true"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="51.0dip"
+            android:layout_toLeftOf="@id/arrow_right2"
+            android:layout_toRightOf="@id/order_detail_receipt_title"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_detail_receipt_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:paddingLeft="14.0dip"
+                android:text="个人发票"
+                android:textColor="@color/fill_order_delivery_dark"
+                android:textSize="17.0dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_receipt_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_detail_receipt_title"
+            android:layout_toLeftOf="@id/arrow_right2"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_receipt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:lines="2"
+                android:paddingLeft="14.0dip"
+                android:textColor="@color/fill_order_delivery_light"
+                android:textSize="14.0dip"/>
+
+            <TextView
+                android:id="@+id/order_receipt_content_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="2.0dip"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:lines="1"
+                android:paddingLeft="14.0dip"
+                android:textColor="@color/fill_order_delivery_light"
+                android:textSize="14.0dip"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/order_detail_line" />
+</LinearLayout>

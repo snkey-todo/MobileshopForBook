@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffda434e</color>
+    <color name="light">#ff7c7c7c</color>
+    <color name="divgray">#ffcecece</color>
+    <color name="dark">#ff3d3d3d</color>
+
+    <color name="category_left_bg_color">#fff3f4f6</color>
+    <color name="category_left_red_font">#fff15353</color>
+    <color name="category_left_dark_font">#ff252525</color>
+    <color name="category_right_item_title_font">#ff686868</color>
+    <color name="category_right_item_font">#ff252525</color>
+
+    <color name="common_title_text_color">#ff252525</color>
+    <color name="transparent">#00000000</color>
+    <color name="pd_black_25">#ff252525</color>
+    <color name="pd_red">#fff15353</color>
+    <color name="pd_red_d">#ffa83a3a</color>
+    <color name="pd_gray">#ff848689</color>
+    <color name="pd_btn_gray">#ffbfbfbf</color>
+    <color name="pd_black_68">#ff686868</color>
+
+    <color name="cart_bg">#fff3f5f7</color>
+
+    <color name="c_C7C7C7">#ffc7c7c7</color>
+    <color name="c_848689">#ff848689</color>
+    <color name="cart_bottom_show_view_bg">#cc000000</color>
+    <color name="cart_bottom_all_select_color">#d9ffffff</color>
+    <color name="shopping_cart_bottom_total_price_bg">#ffeaedf1</color>
+    <color name="cart_i81n_text_color">#fff15353</color>
+    <color name="shopping_cart_move_to_collect_text_color">#ff686868</color>
+    <color name="shopping_cart_change_product">#ff686868</color>
+    <color name="shopping_cart_take_gift">#fff76d6d</color>
+    <color name="shopping_cart_product_name">#ff252525</color>
+    <color name="shopping_cart_product_num">#ff848689</color>
+    <color name="cart_product_name">#ff555555</color>
+    <color name="shopping_cart_remain_bg">#ff252525</color>
+    <color name="cart_item_background_gap_color">#ffd7d7d7</color>
+    <color name="shopping_cart_subtotal_text">#fff24b48</color>
+    <color name="shopping_cart_return_cash">#ff8f9195</color>
+    <color name="cart_empty_page_state_color">#ff252525</color>
+    <color name="cart_empty_page_description_color">#ff848689</color>
+    <color name="cart_empty_page_limit_color">#ff666666</color>
+
+    <color name="fill_order_bg">#fff3f4f6</color>
+    <color name="fill_order_content_solid">#ff3f4246</color>
+    <color name="fill_order_delivery_time_color1">#ff222222</color>
+    <color name="fill_order_delivery_normal">#ff666666</color>
+    <color name="fill_order_item_split_line">#ffe3e3e3</color>
+    <color name="fill_order_delivery_button_red_color">#fff15353</color>
+    <color name="fill_order_content_virtual2">#ff65666e</color>
+    <color name="order_pay_font_grey">#ff979797</color>
+    <color name="fill_order_delivery_time_color">#fff15353</color>
+    <color name="fill_order_delivery_light">#ff686868</color>
+    <color name="fill_order_delivery_dark">#ff252525</color>
+    <color name="fill_order_virtual_content_color">#ff999999</color>
+    <color name="fill_order_content_color">#ff3f4246</color>
+    <color name="all_bg">#fff6f2ed</color>
+    <color name="fill_order_virtual_text_color">#ff999999</color>
+    <color name="fill_order_dialog_ok_text_color">#ffffffff</color>
+    <color name="fill_order_item_bg">#ffffffff</color>
+    <color name="fill_order_submit_button_pressed">#ffa83a3a</color>
+    <color name="fill_order_submit_button_disable">#fff0f0f0</color>
+    <color name="fill_order_submit_button_normal">#fff15353</color>
+
+    <color name="new_easy_buy_address_background_color">#ffededed</color>
+    <color name="black">#ff000000</color>
+    <color name="c_BDBDBD">#ffbdbdbd</color>
+    <color name="font_ba_04">#ffffffff</color>
+    <color name="new_easy_buy_address_text_color">#ff808080</color>
+    <color name="modify_order_address_text_color">#ff525252</color>
+
+    <color name="delivery_deliver_line_bg">#ffe3e3e3</color>
+    <color name="fill_order_content_virtual1">#ff848689</color>
+    <color name="fill_order_delivery_split_line">#ffd7d7d7</color>
+    <color name="fill_order_delivery_button_disable_color">#ffbbbbbb</color>
+    <color name="fill_order_virtual_used_color">#ffaaaaaa</color>
+    <color name="receipt_select_radio_dark">#ff252525</color>
+    <color name="address_line_h">#ffe5e5e5</color>
+    <color name="receipt_txt_color_type_prompt">#ffb4b5b7</color>
+    <color name="logistics_transparent">#00000000</color>
+    <color name="color_868686">#ff868686</color>
+    <color name="fill_order_coupon_bottombar_bg">#fff3f3f3</color>
+
+    <color name="my_personal_bg">#fff3f4f6</color>
+    <color name="my_personal_login_shadow_color">#ff996b3d</color>
+    <color name="my_personal_login_textcolor">#ff754614</color>
+    <color name="gray">#ffcccccc</color>
+    <color name="login_name_text_color">#ff686868</color>
+    <color name="login_name_edit_color">#ff252525</color>
+    <color name="login_edit_hint_text_color">#ffcccaca</color>
+    <color name="login_devider_bg">#ffdedede</color>
+    <color name="login_layout_bg">#fff3f4f6</color>
+
+    <color name="search_title_text_color">#ff474646</color>
+    <color name="search_title_hint_text_color">#ffb6b6b6</color>
+
+    <color name="address_title_color">#ff686868</color>
+    <color name="address_content_color">#ff252525</color>
+    <color name="address_line_v">#ffe5e5e5</color>
+
+    <color name="text_white">#ffffffff</color>
+    <color name="text_red_4">#ffff6969</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="c_F8F8F8">#fff8f8f8</color>
+    <color name="color_f3f5f7">#fff3f5f7</color>
+    <color name="c_252525">#ff252525</color>
+    <color name="c_FFFFFF">#ffffffff</color>
+    <color name="color_f15353">#fff15353</color>
+    <color name="fill_order_finish_text_color">#ff929292</color>
+    <color name="address_list_bg_color">#ffeaedf1</color>
+
+    <color name="search_hotword_bg">#fff3f5f7</color>
+    <color name="search_hotword_hint">#ff444a4d</color>
+    <color name="search_hotword_divider">#ffd7d7d7</color>
+    <color name="del_search_history_textcolor">#ff686868</color>
+    <color name="filter_vertical_separating_line_color">#fff3f4f6</color>
+    <color name="search_keyword_correct_default_text_color">#ff848689</color>
+
+    <color name="product_list_label_bg">#fff3f4f6</color>
+    <color name="search_my_order_text_dark_grey">#ffbababa</color>
+
+    <color name="jshop_list_bg">#fff3f5f7</color>
+    <color name="bind_gift_card_list_balance_text">#fff46464</color>
+    <color name="jshop_line_color">#ffdddddd</color>
+    <color name="jshop_product_stock_color">#ff252525</color>
+    <color name="jshop_notify_text_color">#ff686868</color>
+
+    <color name="activity_bg">#fff5f5f5</color>
+    <color name="order_diliver_guide_bg">#99000000</color>
+    <color name="coo_actity_bg">#fff3f4f6</color>
+    <color name="order_detail_btn_gray_white">#ff686868</color>
+    <color name="order_detail_btn_red_white">#fffe5f5f</color>
+    <color name="order_detail_pay_btn_color">#fff3f5f7</color>
+
+</resources>

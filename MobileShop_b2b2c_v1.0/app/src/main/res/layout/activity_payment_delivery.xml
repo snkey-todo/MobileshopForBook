@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_delivery_out"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fill_order_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/payment_and_delivery_title"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:background="@drawable/common_title_background"
+        android:fadingEdge="none">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector" />
+
+        <TextView
+            style="@style/common_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="选择支付方式" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_and_delivery_title"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_payment_choice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fill_order_list_item_bg"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="12.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付方式"
+                    android:textColor="@color/fill_order_delivery_normal"
+                    android:textSize="@dimen/fill_order_delivery_text_size_big" />
+
+                <LinearLayout
+                    android:id="@+id/payment_radiogroup_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/payment_radiogroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:orientation="vertical"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip">
+
+                      <!--  <RadioButton
+                            android:id="@+id/btn_jdShipment1"
+                            style="@style/select_delivery_radiobtn_style"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dip"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/order_pickup_butn_seleted_icon"
+                            android:gravity="left"
+                            android:text="京东快递"
+                            android:visibility="visible" />-->
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_payment_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:textColor="@color/fill_order_delivery_light"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fill_order_line_height"
+                android:background="@color/delivery_deliver_line_bg" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/invoice_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fill_order_coupon_bottombar_bg"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/select_delivery_type_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/delivery_self_pick_sure_button_bg"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="19.0sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

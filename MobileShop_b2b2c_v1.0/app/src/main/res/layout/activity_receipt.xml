@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invoice_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fill_order_bg">
+
+    <FrameLayout
+        android:id="@+id/receipt_info_title"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:background="@drawable/common_title_background"
+        android:fadingEdge="none">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector" />
+
+        <TextView
+            style="@style/common_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="设置发票信息" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/fill_order_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receipt_info_title"
+        android:layout_gravity="top"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/invoice_type_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fill_order_receiptinfo_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/invoice_padding_17.5"
+                android:paddingLeft="@dimen/invoice_layout_paddingleft"
+                android:paddingRight="@dimen/invoice_layout_paddingleft"
+                android:paddingTop="@dimen/invoice_padding_17.5">
+
+                <TextView
+                    android:id="@+id/invoice_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发票类型"
+                    android:textColor="@color/fill_order_content_virtual2"
+                    android:textSize="@dimen/invoice_receive_information_select_text_size_medium" />
+
+                <RadioGroup
+                    android:id="@+id/invoice_type_raidogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="@dimen/invoice_margin_top_20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btn_invoice_type_0"
+                        style="@style/select_invoice_radiobtn_style"
+                        android:layout_marginRight="10.0dip"
+                        android:text="不开发票" android:tag="0"/>
+
+                    <RadioButton
+                        android:id="@+id/btn_invoice_type_1"
+                        style="@style/select_invoice_radiobtn_style"
+                        android:layout_marginRight="10.0dip"
+                        android:text="个人" android:tag="1"/>
+
+                    <RadioButton
+                        android:id="@+id/btn_invoice_type_2"
+                        style="@style/select_invoice_radiobtn_style"
+                        android:text="单位" android:tag="2"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/invoice_type_hint_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/invoice_type_hint_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:text="发票在您收到货30天后通过平邮寄出，请注意查收"
+                        android:textColor="@color/fill_order_virtual_used_color"
+                        android:textSize="@dimen/invoice_text_size_22"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/invoice_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invoice_type_layout"
+                android:layout_marginTop="@dimen/fill_order_margintop"
+                android:background="@drawable/fill_order_receiptinfo_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/invoice_padding_17.5"
+                android:paddingLeft="@dimen/invoice_layout_paddingleft"
+                android:paddingRight="@dimen/invoice_layout_paddingleft"
+                android:paddingTop="@dimen/invoice_padding_17.5"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/invoice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发票抬头"
+                    android:textColor="@color/fill_order_content_virtual2"
+                    android:textSize="@dimen/invoice_receive_information_select_text_size_medium" />
+
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/invoice_title"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="@dimen/invoice_margin_top_20"
+                    android:background="@drawable/invoice_information_eidt_bg"
+                    android:hint="可填入个人或单位名称"
+                    android:includeFontPadding="true"
+                    android:isScrollContainer="true"
+                    android:paddingLeft="@dimen/color_buy_category_submit_margin_top"
+                    android:paddingRight="@dimen/invoice_padding_14"
+                    android:textColor="@color/receipt_select_radio_dark"
+                    android:textColorHint="@color/fill_order_virtual_content_color"
+                    android:textSize="@dimen/invoice_text_size_30" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/invoice_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invoice_title_layout"
+                android:layout_marginTop="@dimen/fill_order_margintop"
+                android:background="@drawable/fill_order_receiptinfo_bg"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/invoice_padding_17.5" android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/receive_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/invoice_layout_paddingleft"
+                    android:layout_marginRight="@dimen/invoice_layout_paddingleft"
+                    android:text="发票内容"
+                    android:textColor="@color/fill_order_content_virtual2"
+                    android:textSize="@dimen/invoice_receive_information_select_text_size_medium" />
+
+                <ImageView
+                    android:id="@+id/receive_content_title_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/fill_order_address_devision_line"
+                    android:layout_marginLeft="@dimen/fill_order_marginleft"
+                    android:layout_marginTop="@dimen/fill_order_margintop"
+                    android:background="@color/address_line_h"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/invoice_general_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fill_order_margintop"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip"
+                    android:paddingLeft="@dimen/invoice_layout_paddingleft"
+                    android:paddingRight="@dimen/invoice_layout_paddingleft"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/radio_item_row"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/invoice_margin_top_38">
+
+                        <RadioButton
+                            android:id="@+id/receipt_radio_button_1"
+                            android:layout_width="23.0dip"
+                            android:layout_height="23.0dip"
+                            android:background="@drawable/button_i"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:longClickable="false"/>
+
+                        <TextView
+                            android:id="@+id/receipt_radio_content_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/invoice_margin_top_38"
+                            android:singleLine="true"
+                            android:text="办公用品"
+                            android:textColor="@color/fill_order_virtual_used_color"
+                            android:textSize="@dimen/invoice_text_size_30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/radio_item_row2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/invoice_margin_top_38">
+
+                        <RadioButton
+                            android:id="@+id/receipt_radio_button_2"
+                            android:layout_width="23.0dip"
+                            android:layout_height="23.0dip"
+                            android:background="@drawable/button_i"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:longClickable="false" />
+
+                        <TextView
+                            android:id="@+id/receipt_radio_content2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/invoice_margin_top_38"
+                            android:singleLine="true"
+                            android:text="劳保用品"
+                            android:textColor="@color/fill_order_virtual_used_color"
+                            android:textSize="@dimen/invoice_text_size_30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/radio_item_row3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/invoice_margin_top_38">
+
+                        <RadioButton
+                            android:id="@+id/receipt_radio_button_3"
+                            android:layout_width="23.0dip"
+                            android:layout_height="23.0dip"
+                            android:background="@drawable/button_i"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:longClickable="false" />
+
+                        <TextView
+                            android:id="@+id/receipt_radio_content3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/invoice_margin_top_38"
+                            android:singleLine="true"
+                            android:text="耗材"
+                            android:textColor="@color/fill_order_virtual_used_color"
+                            android:textSize="@dimen/invoice_text_size_30" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_invoice_notice_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/invoice_margin_top_80"
+                android:layout_below="@id/invoice_content_layout"
+                android:gravity="fill_horizontal"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/invoice_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fill_order_coupon_bottombar_bg"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip">
+
+        <Button
+            android:id="@+id/btn_comfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="20.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="12.0dip"
+            android:background="@drawable/button_b"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fill_order_coupon_button_text"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

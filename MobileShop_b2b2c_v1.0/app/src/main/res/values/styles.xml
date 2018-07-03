@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowEnterAnimation">@anim/splash_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/splash_fade_out</item>
+    </style>
+
+    <style name="tab_item_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="tab_item_image_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#0000</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="common_layout_title">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/common_title_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="line_vertical">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="listView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:dividerHeight">0.6dip</item>
+    </style>
+
+    <style name="order_pay_text_font">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/fill_order_delivery_time_color1</item>
+    </style>
+
+    <style name="order_pay_text_font2">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/order_pay_font_grey</item>
+    </style>
+
+    <style name="fill_order_devide_line">
+        <item name="android:background">@color/fill_order_item_split_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+
+    <style name="select_delivery_radiobtn_style">
+        <item name="android:enabled">true</item>
+        <item name="android:textSize">@dimen/fill_order_delivery_text_size_medium</item>
+        <item name="android:textColor">@color/select_delivery_type_radio_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/fill_order_payment_style_bg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">110.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="select_invoice_radiobtn_style">
+        <item name="android:enabled">true</item>
+        <item name="android:textSize">@dimen/fill_order_delivery_text_size_medium</item>
+        <item name="android:textColor">@color/select_delivery_type_radio_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/fill_order_payment_style_bg</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">90.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="line2">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+
+    <style name="my_personal_list_height">
+        <item name="android:layout_height">49.0dip</item>
+    </style>
+
+    <style name="title_right_button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/plug_center_promotion_right_button_background_selector</item>
+        <item name="android:layout_width">80.0dip</item>
+    </style>
+
+    <style name="common_button">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/android_big_button_x</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="line1">
+        <item name="android:background">#ffcccccc</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+
+    <style name="order_detail_line">
+        <item name="android:background">#ffe1e1e1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0px</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="PopWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+</resources>

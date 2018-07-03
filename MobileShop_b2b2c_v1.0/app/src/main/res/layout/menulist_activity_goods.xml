@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f8" >
+
+    <View
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#ff0000" />
+
+    <RelativeLayout
+        android:id="@+id/head_relat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/head_view"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/title1"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热销商品" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="88dp"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/bc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/common_title_back_selector"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/bc"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/goodslist_orderby"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/head_relat"
+        android:background="@drawable/goods_list_sort_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/goodslist_orderby_random_relat"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/goodslist_orderby_random_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="默认"
+                android:textColor="@color/light"
+                android:textSize="@dimen/goods_list_sort_font_size" />
+
+            <ImageView
+                android:id="@+id/goodslist_orderby_random_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/goodslist_orderby_random_text"
+                android:contentDescription="默认"
+                android:src="@drawable/sort_button_price_none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goodslist_orderby_commant_relat"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/goodslist_orderby_commant_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="评论"
+                android:textColor="@color/light"
+                android:textSize="@dimen/goods_list_sort_font_size" />
+
+            <ImageView
+                android:id="@+id/goodslist_orderby_commant_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/goodslist_orderby_commant_text"
+                android:contentDescription="评论"
+                android:src="@drawable/sort_button_price_none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goodslist_orderby_price"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/goodslist_orderby_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/price"
+                android:textColor="@color/light"
+                android:textSize="@dimen/goods_list_sort_font_size" />
+
+            <ImageView
+                android:id="@+id/goodslist_orderby_price_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/goodslist_orderby_price_text"
+                android:contentDescription="价格"
+                android:src="@drawable/sort_button_price_none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/goodslist_orderby_count_relat"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/goodslist_orderby_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="销量"
+                android:textColor="@color/light"
+                android:textSize="@dimen/goods_list_sort_font_size" />
+
+            <ImageView
+                android:id="@+id/goodslist_orderby_count_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@id/goodslist_orderby_count_text"
+                android:contentDescription="销量"
+                android:src="@drawable/sort_button_price_none" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/goodslist_orderby"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="11dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp"
+        ptr:ptrHeaderBackground="#ebecee"
+        ptr:ptrMode="both" />
+
+    <TextView
+        android:id="@+id/goodslist_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/goodslist_orderby"
+        android:gravity="center"
+        android:text="@string/nodata"
+        android:visibility="gone" />
+
+</RelativeLayout>

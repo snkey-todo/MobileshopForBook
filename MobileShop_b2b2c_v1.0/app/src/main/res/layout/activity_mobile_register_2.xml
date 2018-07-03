@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_layout_bg"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/common_title_background">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxWidth="180.0dip"
+            android:singleLine="true"
+            android:text="手机注册"
+            android:textColor="@color/common_title_text_color"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/login_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/common_title">
+
+
+        <RelativeLayout
+            android:id="@+id/login_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!--提示信息-->
+            <RelativeLayout
+                android:id="@+id/field_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_editor_layout_margin_top"
+                android:layout_marginRight="@dimen/login_editor_layout_margin_top"
+                android:layout_marginTop="@dimen/login_editor_layout_margin_top">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip">
+
+                    <TextView
+                        android:id="@+id/message_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="短信已发送到13188889999"
+                        android:textColor="@color/login_name_text_color"
+                        android:textSize="13.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--带按钮的输入框-->
+            <RelativeLayout
+                android:id="@+id/register_mobile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/field_title_layout"
+                android:layout_marginLeft="@dimen/login_editor_layout_margin_top"
+                android:layout_marginRight="@dimen/login_editor_layout_margin_top"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/white"
+                android:paddingLeft="13.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mobile_code_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="请输入验证码"
+                        android:longClickable="false"
+                        android:paddingTop="8.0dip"
+                        android:singleLine="true"
+                        android:textColor="@color/login_name_edit_color"
+                        android:textColorHint="@color/login_edit_hint_text_color"
+                        android:textSize="@dimen/login_editor_layout_edit_text_size" />
+
+                    <Button
+                        android:id="@+id/resend_btn"
+                        android:layout_width="120dip"
+                        android:layout_height="40.0dip"
+                        android:layout_gravity="right"
+                        android:layout_weight="0"
+                        android:background="@drawable/button_b_login"
+                        android:enabled="false"
+                        android:text="20秒后重新发送"
+                        android:textColor="@color/white"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_comfirm_button_height"
+                android:layout_below="@id/register_mobile_layout"
+                android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+                android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+                android:layout_marginTop="40.0dip"
+                android:background="@drawable/button_b_login"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_comfirm_button_text_size" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

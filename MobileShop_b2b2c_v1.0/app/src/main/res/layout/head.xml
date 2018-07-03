@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fill_order_all_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fill_order_bg"
+    android:orientation="vertical" >
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_checkout_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/fill_order_receiver_divider_upper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fill_order_receiver_divider_bg_top" />
+        <!-- 没有收货地址 -->
+
+        <RelativeLayout
+            android:id="@+id/layout_address_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fill_order_receiver_divider_upper"
+            android:background="@drawable/fill_order_list_item_bg"
+            android:gravity="center"
+            android:paddingBottom="20.0dip"
+            android:paddingTop="20.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/address_add_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:text="请新建收货地址以确保商品顺利到达"
+                android:textColor="@color/fill_order_content_solid" />
+        </RelativeLayout>
+        <!-- 有收货地址，显示默认地址 -->
+
+        <RelativeLayout
+            android:id="@+id/layout_address_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_order_list_item_bg" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_receiver_detail"
+                android:paddingBottom="10.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/receiver_name_icon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/address_name_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/receiver_name_icon" />
+
+                    <TextView
+                        android:id="@+id/textview_address_name_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:ellipsize="end"
+                        android:gravity="center|left"
+                        android:singleLine="true"
+                        android:textColor="@color/fill_order_delivery_time_color1"
+                        android:textSize="17.0sp" />
+
+                    <ImageView
+                        android:id="@+id/address_mobile_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:src="@drawable/receiver_mobile_icon" />
+
+                    <TextView
+                        android:id="@+id/textview_address_mobile_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6.0dip"
+                        android:gravity="right"
+                        android:textColor="@color/fill_order_delivery_time_color1"
+                        android:textSize="17.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_address_address_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receiver_name_icon_layout"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:gravity="left"
+                    android:maxLines="3"
+                    android:textColor="@color/fill_order_delivery_normal"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_receiver_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/button_k" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/fill_order_item_split_line" />
+
+        <RelativeLayout
+            android:id="@+id/layout_payment_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_order_list_item_bg"
+            android:paddingBottom="14.5dip"
+            android:paddingTop="14.5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="支付"
+                android:textColor="@color/fill_order_content_virtual2"
+                android:textSize="15.0dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/payment_type_detail2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview_payment_content"
+                    style="@style/order_pay_text_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/payment_type_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/button_k" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/fill_order_item_split_line" />
+
+        <RelativeLayout
+            android:id="@+id/layout_invoice_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_order_list_item_bg"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/payment_type_detail3"
+                android:paddingBottom="14.5dip"
+                android:paddingTop="14.5dip" >
+
+                <TextView
+                    android:id="@+id/textview_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="left"
+                    android:text="发票信息"
+                    android:textColor="@color/fill_order_delivery_light"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@+id/textview_receipt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_toRightOf="@id/textview_invoice"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/fill_order_delivery_time_color1" />
+
+                <TextView
+                    android:id="@+id/textview_receipt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/textview_receipt_type"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@id/textview_invoice"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:text="不开发票"
+                    android:textColor="@color/fill_order_delivery_time_color1" />
+
+                <TextView
+                    android:id="@+id/textview_receipt_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/textview_receipt_title"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@id/textview_invoice"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/fill_order_delivery_time_color1" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/payment_type_detail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/button_k" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_mark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/fill_order_list_item_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible" >
+
+            <View
+                android:id="@+id/ding_dan_mark_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/fill_order_item_split_line" />
+
+            <TextView
+                android:id="@+id/ding_dan_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ding_dan_mark_line"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="订单备注"
+                android:textColor="@color/fill_order_delivery_light"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:id="@+id/edittext_remark_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ding_dan_mark"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/invoice_information_eidt_bg"
+                android:hint="限45个字以内"
+                android:includeFontPadding="true"
+                android:isScrollContainer="true"
+                android:maxLength="45"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="@color/fill_order_delivery_dark"
+                android:textColorHint="@color/fill_order_virtual_content_color"
+                android:textSize="14.0sp" />
+
+            <View
+                android:id="@+id/ding_dan_mark_line_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@id/edittext_remark_content"
+                android:background="@color/fill_order_item_split_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

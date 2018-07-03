@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/category_left_bg_normal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/categoty_new_level1_text"
+        android:ellipsize="end"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4.0dip"
+        android:maxLines="3"
+        android:layout_centerVertical="true" />
+</LinearLayout>

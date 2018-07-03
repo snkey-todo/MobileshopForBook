@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_detail_allView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="49.0dip"
+        android:background="@drawable/common_title_background"
+        android:fadingEdge="none">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/common_title_back_selector" />
+
+        <TextView
+            style="@style/common_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="订单详情" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ldv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/common_title">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/order_detail_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/product_detail_bottombar"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/order_detail_finish_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="62.0dip"
+                    android:background="@drawable/product_detail_bottombar"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/order_detail_finish_del"
+                        android:layout_width="0.0dip"
+                        android:layout_height="38.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="删除订单"
+                        android:textColor="@color/fill_order_delivery_light"
+                        android:textSize="@dimen/order_detail_text_size_4btn" />
+
+                    <!--<Button-->
+                        <!--android:id="@+id/order_detail_return_btn"-->
+                        <!--android:layout_width="0.0dip"-->
+                        <!--android:layout_height="38.0dip"-->
+                        <!--android:layout_marginRight="5.0dip"-->
+                        <!--android:layout_weight="1.0"-->
+                        <!--android:background="@drawable/order_detail_btn_gray_selector"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="@string/content_order_product_return"-->
+                        <!--android:textColor="@color/order_detail_btn_gray_white"-->
+                        <!--android:textSize="@dimen/order_detail_text_size_4btn" />-->
+
+                    <Button
+                        android:id="@+id/order_detail_rebuy_btn"
+                        android:layout_width="0.0dip"
+                        android:layout_height="38.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/order_detail_btn_red_selector"
+                        android:gravity="center"
+                        android:text="@string/content_order_rebuy"
+                        android:textColor="@color/order_detail_btn_red_white"
+                        android:textSize="@dimen/order_detail_text_size_4btn" />
+
+                    <Button
+                        android:id="@+id/btn_discuss_recomment"
+                        style="@style/common_button"
+                        android:layout_width="0.0dip"
+                        android:layout_height="38.0dip"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/order_detail_btn_gray_selector"
+                        android:focusable="false"
+                        android:text="@string/order_detail_discuss_comment"
+                        android:textColor="@color/order_detail_btn_gray_white"
+                        android:textSize="@dimen/order_detail_text_size_4btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_detail_bottom_pay_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="62.0dip"
+                    android:background="@drawable/product_detail_bottombar"
+                    android:baselineAligned="false"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:weightSum="2.0">
+
+                    <LinearLayout android:id="@+id/order_detail_cancel_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0">
+
+                        <Button
+                            android:id="@+id/order_detail_cancel_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="38.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxWidth="100.0dip"
+                            android:padding="10.0dip"
+                            android:text="取消订单"
+                            android:textColor="@color/fill_order_delivery_light"
+                            android:textSize="15.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/order_detail_payment_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0">
+
+                        <Button
+                            android:id="@+id/order_detail_payment_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="38.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:maxWidth="100.0dip"
+                            android:padding="10.0dip"
+                            android:text="在线支付"
+                            android:textColor="@color/red"
+                            android:textSize="15.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_detail_handle_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0">
+
+                        <Button
+                            android:id="@+id/order_detail_handle_btn"
+                            style="@style/common_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45.0dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="12.0dip"
+                            android:layout_marginLeft="12.0dip"
+                            android:background="@drawable/order_detail_pay_selector"
+                            android:focusable="false"
+                            android:textColor="@color/order_detail_pay_btn_color"
+                            android:textSize="21.0dip" android:text="确认收货"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                android:id="@+id/order_detail_scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/order_detail_bottom"
+                android:background="@color/activity_bg"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/order_info_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/order_detail_status_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.0dip"
+                        android:background="@drawable/fill_order_list_item_bg"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/order_detail_status_layout_comm"
+                            layout="@layout/order_status_layout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_addr_detail_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:background="@drawable/fill_order_list_item_bg"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/order_consignee_number_layout"
+                            layout="@layout/order_status_addr_layout" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/product_of_order"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:background="@drawable/fill_order_list_item_bg"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/order_list_product_divider_line_0"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:background="#ffe1e1e1" />
+
+                        <LinearLayout
+                            android:id="@+id/goods_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@null"
+                            android:footerDividersEnabled="false"
+                            android:listSelector="@null"
+                            android:minHeight="40.0dip"
+                            android:scrollbars="none" android:orientation="vertical"/>
+
+                        <View
+                            android:id="@+id/order_list_product_divider_line_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:background="#ffe1e1e1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_detail_delivery_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:background="@drawable/fill_order_list_item_bg"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/order_detail_status_layout_comm"
+                            layout="@layout/order_info_detail_pay_status" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_price_detail_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.0dip"
+                        android:background="@drawable/fill_order_list_item_bg"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:background="#ffe1e1e1" />
+
+                        <LinearLayout
+                            android:id="@+id/order_detail_status_layout_details"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="10.0dip" />
+
+                        <include
+                            android:id="@+id/order_detail_status_layout_comm"
+                            layout="@layout/order_money_layout" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0px"
+                        android:background="#ffe1e1e1" />
+                </LinearLayout>
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

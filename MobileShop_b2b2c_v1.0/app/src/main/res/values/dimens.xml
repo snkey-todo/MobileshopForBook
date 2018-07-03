@@ -1,0 +1,88 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--PullToRefresh BEGIN-->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!--PullToRefresh END-->
+
+    <dimen name="cart_product_nodata_padding_top">30.0dip</dimen>
+
+    <dimen name="categoty_new_level1_text">13.0dip</dimen>
+    <dimen name="category_new_level2_text">10.0dip</dimen>
+    <dimen name="category_new_level3_text">10.0dip</dimen>
+
+    <dimen name="goods_list_sort_font_size">15.0dip</dimen>
+
+    <dimen name="fill_order_delivery_text_size_big">15.0sp</dimen>
+    <dimen name="fill_order_line_height">0.5dip</dimen>
+    <dimen name="fill_order_layout_margin">10.0dip</dimen>
+    <dimen name="fill_order_delivery_text_size_medium">14.0sp</dimen>
+    <dimen name="fill_order_marginleft">10.0dip</dimen>
+    <dimen name="invoice_margin_top_80">80.0dip</dimen>
+
+    <dimen name="invoice_padding_17.5">17.5dip</dimen>
+    <dimen name="invoice_layout_paddingleft">10.0dip</dimen>
+    <dimen name="invoice_receive_information_select_text_size_medium">15.0sp</dimen>
+    <dimen name="invoice_margin_top_20">9.0dip</dimen>
+    <dimen name="invoice_text_size_22">11.0sp</dimen>
+    <dimen name="fill_order_margintop">10.0dip</dimen>
+    <dimen name="color_buy_category_submit_margin_top">15.0dip</dimen>
+    <dimen name="invoice_padding_14">7.0dip</dimen>
+    <dimen name="invoice_text_size_30">15.0sp</dimen>
+    <dimen name="invoice_text_size_26">13.0sp</dimen>
+    <dimen name="invoice_receive_information_button_marginleft">10.0dip</dimen>
+    <dimen name="invoice_receive_information_marginleft">5.0dip</dimen>
+    <dimen name="fill_order_address_devision_line">0.5dip</dimen>
+    <dimen name="invoice_text_size_24">12.0sp</dimen>
+    <dimen name="fill_order_coupon_button_text">19.0sp</dimen>
+
+    <dimen name="invoice_margin_top_38">19.0dip</dimen>
+    <dimen name="personal_user_head_height">127.0dip</dimen>
+    <dimen name="personal_user_img_view_width">70.0dip</dimen>
+    <dimen name="personal_user_img_view_height">70.0dip</dimen>
+    <dimen name="personal_user_photo_marginleft">22.0dip</dimen>
+
+    <!--登录-->
+    <dimen name="login_top_height">125.0dip</dimen>
+    <dimen name="login_top_user_icon_height">98.0dip</dimen>
+    <dimen name="login_top_padding">16.5dip</dimen>
+    <dimen name="login_editor_layout_margin_top">12.5dip</dimen>
+    <dimen name="login_editor_layout_edit_height">55.0dip</dimen>
+    <dimen name="login_editor_layout_edit_text_size">15.0sp</dimen>
+    <dimen name="login_selector_icon_delete">15.0dip</dimen>
+    <dimen name="login_password_delete_width">18.0dip</dimen>
+    <dimen name="login_name_delete_margin_right">30.0dip</dimen>
+    <dimen name="login_divider_line_margin_left">60.0dip</dimen>
+    <dimen name="login_switchBtn_width">67.0dip</dimen>
+    <dimen name="login_switchBtn_height">36.0dip</dimen>
+    <dimen name="login_comfirm_button_height">42.0dip</dimen>
+    <dimen name="login_comfirm_button_margin_top">13.0dip</dimen>
+    <dimen name="login_comfirm_button_text_size">17.0sp</dimen>
+    <dimen name="register_link_text_size">15.0sp</dimen>
+
+    <dimen name="new_easy_buy_address_text_size">17.0sp</dimen>
+    <dimen name="new_easy_buy_address_margin">15.0dip</dimen>
+    <dimen name="fill_order_address_title_size">15.0sp</dimen>
+    <dimen name="fill_order_address_title_content_size">15.0sp</dimen>
+    <dimen name="fill_order_address_contact_top">5.0dip</dimen>
+    <dimen name="fill_order_address_item_index_marginright">10.0dip</dimen>
+    <dimen name="fill_order_line_margin">10.0dip</dimen>
+    <dimen name="fill_order_address_selected_list_padding">10.0dip</dimen>
+    <dimen name="fill_order_arrow_left_margin">10.0dip</dimen>
+    <dimen name="fill_order_commitlist_margin">12.0dip</dimen>
+
+    <dimen name="search_keyword_correct__text_size">13.0sp</dimen>
+
+    <dimen name="fill_order_coupon_name_text">16.0sp</dimen>
+
+    <dimen name="order_detail_text_size_4btn">15.0dip</dimen>
+    <dimen name="fill_order_text_space_margin">6.0dip</dimen>
+
+
+</resources>

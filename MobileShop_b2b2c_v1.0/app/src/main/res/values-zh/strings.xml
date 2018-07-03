@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MobileShop</string>
+
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="sales">销量</string>
+    <string name="grade">评价</string>
+    <string name="price">价格</string>
+    <string name="newgoods">新品</string>
+    <string name="nodata">抱歉，没有符合条件的商品</string>
+    <string name="nocomment">抱歉，暂时没有评论内容</string>
+    <string name="goods_detail">商品详情</string>
+    <string name="add_to_cart">加入购物车</string>
+    <string name="goods_stock">库存</string>
+    <string name="goods_intro">商品介绍</string>
+    <string name="goods_attr">商品属性</string>
+    <string name="favorite">收藏</string>
+    <string name="cart">购物车</string>
+    <string name="fill_order_current_order_id">订单编号</string>
+    <string name="fill_order_current_order_menoy">应付金额</string>
+    <string name="fill_order_current_order_paytype">支付方式</string>
+    <string name="completed">完成</string>
+    <string name="fill_order_submit_sucess_continue">您可继续</string>
+    <string name="homeActivity_autoComplete">搜索商品</string>
+    <string name="search">搜索</string>
+    <string name="del_search_history">清空历史搜索</string>
+    <string name="order_bumber">订单号：</string>
+    <string name="favo_no_data">您还没有收藏过任何商品！何不去逛逛~</string>
+    <string name="content_order_product_return">返修/退货</string>
+    <string name="content_order_rebuy">再次购买</string>
+    <string name="order_detail_discuss_comment">去评价</string>
+    <string name="pg_post_paytype_selectpayment_dialog">支付方式</string>
+    <string name="content_persong_type">配送方式</string>
+    <string name="receipt_info">发票信息</string>
+    <string name="mobileshop">MobileShop</string>
+</resources>
