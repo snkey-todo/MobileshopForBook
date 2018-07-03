@@ -1,0 +1,35 @@
+{
+  "status":0,
+  "data":[
+    {
+      "id":1,
+      "username":"tom",
+      "category":"clothes",
+      "payment":50
+    },
+    {
+      "id":2,
+      "username":"tom",
+      "category":"toy",
+      "payment":100
+    },
+    {
+      "id":3,
+      "username":"tom",
+      "category":"food",
+      "payment":80
+    },
+    {
+      "id":4,
+      "username":"tom",
+      "category":"shoes",
+      "payment":30
+    },
+    {
+      "id":5,
+      "username":"tom",
+      "category":"cups",
+      "payment":20
+    }
+  ]
+}
